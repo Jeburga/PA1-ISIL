@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ab001",
+    "nombre": "Ana Valverde",
+    "especialidad": "Derecho Laboral",
+    "foto": "miembro1",
+    "tags": ["Despidos", "Beneficios", "Sunafil"]
+  },
+  {
+    "id": "ab002",
+    "nombre": "Carlos Ibáñez",
+    "especialidad": "Derecho Corporativo",
+    "foto": "miembro2",
+    "tags": ["Constitución", "M&A", "Contratos"]
+  },
+  {
+    "id": "ab003",
+    "nombre": "Mario Rojas",
+    "especialidad": "Protección al Consumidor",
+    "foto": "miembro3",
+    "tags": ["Indecopi", "Publicidad", "Reclamos"]
+  },
+  {
+    "id": "ab004",
+    "nombre": "José Mendoza",
+    "especialidad": "Derecho Civil",
+    "foto": "miembro4",
+    "tags": ["Cobro de deudas", "Responsabilidad civil"]
+  },
+  {
+    "id": "ab005",
+    "nombre": "Jason Fernández",
+    "especialidad": "Propiedad Intelectual",
+    "foto": "miembro5",
+    "tags": ["Marcas", "Patentes", "Derechos de autor"]
+  },
+  {
+    "id": "ab006",
+    "nombre": "Pedro Salas",
+    "especialidad": "Penal Económico",
+    "foto": "miembro6",
+    "tags": ["Compliance", "Delitos societarios"]
+  }
+]

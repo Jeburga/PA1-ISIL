@@ -1,0 +1,40 @@
+h5 {
+    line-height: 65px;
+    margin-bottom: 10px;
+}
+
+.slick-slide img {
+    margin-bottom: -18px;
+}
+
+.slick-next {
+    right: 100px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+}
+
+.slick-dots li button:before {
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: -50px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--color-accent);
+}
+
+.banner-caption {
+    position: absolute;
+    bottom: 0;
+    color: var(--color-blanco);
+    width: 50%;
+    padding: 2rem;
+}
+
+.banner-caption h5 {
+    font-size: 4rem;
+    font-weight: 900;
+}

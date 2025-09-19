@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+    --color-principal: #1C4B42;
+    --color-verde-claro: #B4E717;
+    --color-verde-intermedio: #92C200;
+    --color-blanco: #FFFFFF;
+    --color-humo: #F6F5F2;
+    --color-negro: #000000;
+    --color-negro-desvanecido: #0000001A;
+    --color-accent: #7E7E7E;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+h2 {
+  font-size: 42px;
+  color: var(--color-principal);
+  font-weight: 600;
+  word-spacing: -3px;
+  line-height: 50px;
+}
+
+h2 span {
+  color: var(--color-verde-intermedio);
+}
+
+h3 {
+  color: var(--color-humo);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.button1 {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: var(--color-verde-intermedio);
+  color: var(--color-principal);
+}
+
+.button2 {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-blanco);
+  color: var(--color-principal);
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
+.button2:hover {
+  background-color: var(--color-humo);
+}
