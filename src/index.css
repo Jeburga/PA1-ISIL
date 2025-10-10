@@ -34,6 +34,19 @@ h3 {
   font-weight: 600;
 }
 
+.tabla-detalle-curso th,
+.tabla-detalle-curso td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-negro-desvanecido);
+}
+
+.tabla-detalle-curso th {
+  width: 180px;
+  color: var(--color-principal);
+  font-weight: 600;
+}
+
+
 .button1 {
   background-color: var(--color-principal);
   color: var(--color-blanco);

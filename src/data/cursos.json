@@ -1,0 +1,186 @@
+[
+  {
+    "id": "cur001",
+    "nombre": "Derecho Constitucional I",
+    "docente": "María Fernanda Ponce",
+    "horasLectivas": 64,
+    "categoria": "Derecho Constitucional",
+    "imagen": "/nofoto.jpg",
+    "tags": ["Constitución", "Derechos fundamentales", "Poderes del Estado"]
+  },
+  {
+    "id": "cur002",
+    "nombre": "Control Constitucional y Procesos",
+    "docente": "Javier Quiroz",
+    "horasLectivas": 48,
+    "categoria": "Derecho Constitucional",
+    "imagen": "/images/constitucional.jpg",
+    "tags": ["Amparo", "Habeas Corpus", "Acción Popular"]
+  },
+  {
+    "id": "cur003",
+    "nombre": "Derechos Fundamentales y Bloque de Constitucionalidad",
+    "docente": "Patricia Guzmán",
+    "horasLectivas": 52,
+    "categoria": "Derecho Constitucional",
+    "imagen": "/images/constitucional.jpg",
+    "tags": ["Igualdad", "Bloque de constitucionalidad", "Interpretación"]
+  },
+  {
+    "id": "cur004",
+    "nombre": "Organización del Estado y Jurisdicción Constitucional",
+    "docente": "Héctor Lozano",
+    "horasLectivas": 50,
+    "categoria": "Derecho Constitucional",
+    "imagen": "/images/constitucional.jpg",
+    "tags": ["Separación de poderes", "TC", "Control difuso"]
+  },
+
+  {
+    "id": "cur005",
+    "nombre": "Derecho Penal General",
+    "docente": "Claudia Rivas",
+    "horasLectivas": 68,
+    "categoria": "Derecho Penal",
+    "imagen": "/images/penal.jpg",
+    "tags": ["Tipicidad", "Antijuridicidad", "Culpabilidad"]
+  },
+  {
+    "id": "cur006",
+    "nombre": "Delitos Contra la Administración Pública",
+    "docente": "Diego Salazar",
+    "horasLectivas": 56,
+    "categoria": "Derecho Penal",
+    "imagen": "/images/penal.jpg",
+    "tags": ["Colusión", "Cohecho", "Peculado"]
+  },
+  {
+    "id": "cur007",
+    "nombre": "Teoría del Delito y Política Criminal",
+    "docente": "Renata Muñiz",
+    "horasLectivas": 54,
+    "categoria": "Derecho Penal",
+    "imagen": "/images/penal.jpg",
+    "tags": ["Imputación objetiva", "Iter criminis", "Prevención"]
+  },
+  {
+    "id": "cur008",
+    "nombre": "Derecho Penal Especial: Delitos Patrimoniales",
+    "docente": "Álvaro Núñez",
+    "horasLectivas": 48,
+    "categoria": "Derecho Penal",
+    "imagen": "/images/penal.jpg",
+    "tags": ["Hurto", "Robo", "Estafa"]
+  },
+
+  {
+    "id": "cur009",
+    "nombre": "Compliance Penal Empresarial",
+    "docente": "Rocío Morales",
+    "horasLectivas": 52,
+    "categoria": "Compliance Empresarial",
+    "imagen": "/images/compliance.jpg",
+    "tags": ["Mapeo de riesgos", "Canal de denuncias", "ISO 37301"]
+  },
+  {
+    "id": "cur010",
+    "nombre": "Investigaciones Internas y Anticorrupción",
+    "docente": "Álvaro Núñez",
+    "horasLectivas": 48,
+    "categoria": "Compliance Empresarial",
+    "imagen": "/images/compliance.jpg",
+    "tags": ["Due diligence", "Antisoborno", "ISO 37001"]
+  },
+  {
+    "id": "cur011",
+    "nombre": "Gestión de Cumplimiento y Cultura Ética",
+    "docente": "María Luz Rojas",
+    "horasLectivas": 46,
+    "categoria": "Compliance Empresarial",
+    "imagen": "/images/compliance.jpg",
+    "tags": ["Gobierno corporativo", "Cultura", "Ética"]
+  },
+  {
+    "id": "cur012",
+    "nombre": "Protección de Datos y Privacidad Corporativa",
+    "docente": "Fernando Paredes",
+    "horasLectivas": 44,
+    "categoria": "Compliance Empresarial",
+    "imagen": "/images/compliance.jpg",
+    "tags": ["LPDP", "GDPR", "Seguridad de la información"]
+  },
+
+  {
+    "id": "cur013",
+    "nombre": "Derecho Civil: Personas y Familia",
+    "docente": "Luis Alberto Campos",
+    "horasLectivas": 72,
+    "categoria": "Derecho Civil",
+    "imagen": "/images/civil.jpg",
+    "tags": ["Capacidad", "Filiación", "Matrimonio"]
+  },
+  {
+    "id": "cur014",
+    "nombre": "Obligaciones y Contratos",
+    "docente": "Tatiana Ruiz",
+    "horasLectivas": 64,
+    "categoria": "Derecho Civil",
+    "imagen": "/images/civil.jpg",
+    "tags": ["Contratos", "Responsabilidad civil", "Daños"]
+  },
+  {
+    "id": "cur015",
+    "nombre": "Derechos Reales y Propiedad",
+    "docente": "Rafael Muñoz",
+    "horasLectivas": 58,
+    "categoria": "Derecho Civil",
+    "imagen": "/images/civil.jpg",
+    "tags": ["Posesión", "Propiedad", "Usufructo"]
+  },
+  {
+    "id": "cur016",
+    "nombre": "Contratación Moderna: Cláusulas y Riesgos",
+    "docente": "Cecilia Valdez",
+    "horasLectivas": 52,
+    "categoria": "Derecho Civil",
+    "imagen": "/images/civil.jpg",
+    "tags": ["Contratos atípicos", "Riesgo", "Interpretación"]
+  },
+
+  {
+    "id": "cur017",
+    "nombre": "Violencia Familiar: Marco Legal y Medidas de Protección",
+    "docente": "Silvana Ortega",
+    "horasLectivas": 46,
+    "categoria": "Familia y Violencia Familiar",
+    "imagen": "/images/familia.jpg",
+    "tags": ["Medidas cautelares", "Protección", "Acompañamiento"]
+  },
+  {
+    "id": "cur018",
+    "nombre": "Procesos de Alimentos, Tenencia y Régimen de Visitas",
+    "docente": "Renato Salas",
+    "horasLectivas": 50,
+    "categoria": "Familia y Violencia Familiar",
+    "imagen": "/images/familia.jpg",
+    "tags": ["Tenencia", "Alimentos", "Cuidado compartido"]
+  },
+  {
+    "id": "cur019",
+    "nombre": "Violencia de Género y Litigio Estratégico",
+    "docente": "María Fernanda Ponce",
+    "horasLectivas": 48,
+    "categoria": "Familia y Violencia Familiar",
+    "imagen": "/images/familia.jpg",
+    "tags": ["Medidas de protección", "Litigio estratégico", "Interseccionalidad"]
+  },
+  {
+    "id": "cur020",
+    "nombre": "Restitución Internacional de Menores y Sustracción",
+    "docente": "Javier Quiroz",
+    "horasLectivas": 44,
+    "categoria": "Familia y Violencia Familiar",
+    "imagen": "/images/familia.jpg",
+    "tags": ["Convenio de La Haya", "Cooperación", "Interés superior"]
+  }
+]
