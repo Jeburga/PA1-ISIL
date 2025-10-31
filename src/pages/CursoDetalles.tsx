@@ -152,16 +152,14 @@ const CursoDetalles = () => {
                       className="px-4 py-2 rounded-xl font-medium"
                       style={{ background: "var(--color-verde-intermedio)", color: "var(--color-negro)" }}
                       onClick={() => {
-                        addToCart(
-                          {
+                        addToCart({
                             id: cursoSeleccionado.id,
                             nombre: cursoSeleccionado.nombre,
                             docente: cursoSeleccionado.docente,
                             categoria: cursoSeleccionado.categoria,
                             imagen: cursoSeleccionado.imagen,
-                          },
-                          1
-                        );
+                            cantidad: 1,
+                          });
                         alert("Curso añadido al carrito.");
                       }}
                     >
