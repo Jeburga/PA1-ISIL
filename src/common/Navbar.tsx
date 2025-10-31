@@ -14,6 +14,7 @@ const navigation = [
   { name: "Te contactamos", url: "/contacto" },
   { name: "Nuestros cursos", url: "/cursos" },
   { name: "Equipo", url: "/equipo" },
+  { name: "Staff", url: "/equipolegal"}
 ];
 
 function classNames(...classes: Array<string | false | undefined>) {
