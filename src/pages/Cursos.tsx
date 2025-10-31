@@ -2,8 +2,9 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import cursosData from "../data/cursos.json";
 import nofoto from "../assets/img/nofoto.jpg";
+import { addToCart } from "../utils/cart";
 
-// Tipado local (derivado del JSON)
+// Tipado local
 type Curso = {
   id: string;
   nombre: string;
@@ -17,23 +18,37 @@ type Curso = {
 const Cursos = () => {
   const cursos: Curso[] = cursosData as unknown as Curso[];
 
-  // Extraer categorías únicas
+  // Categorías únicas
   const categorias = useMemo(() => {
     const set = new Set<string>();
     cursos.forEach((c) => set.add(c.categoria));
     return Array.from(set);
   }, [cursos]);
 
-  // Estado: categoría seleccionada (primera por defecto)
+  // Categoría seleccionada
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState<string>(
     categorias[0] ?? ""
   );
 
-  // Filtro por categoría
+  // Filtro
   const cursosDeCategoria = useMemo(
     () => cursos.filter((c) => c.categoria === categoriaSeleccionada),
     [cursos, categoriaSeleccionada]
   );
+
+  // Función para agregar al carrito
+  const agregarAlCarrito = (curso: Curso) => {
+    addToCart({
+      id: curso.id,
+      nombre: curso.nombre,
+      docente: curso.docente,
+      categoria: curso.categoria,
+      cantidad: 1,
+      imagen: curso.imagen ?? nofoto,
+    });
+    alert(`"${curso.nombre}" agregado al carrito`);
+    window.dispatchEvent(new Event("cartUpdated"));
+  };
 
   return (
     <>
@@ -93,10 +108,6 @@ const Cursos = () => {
                             : "var(--color-negro)",
                         }}
                         onClick={() => setCategoriaSeleccionada(cat)}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter" || e.key === " ")
-                            setCategoriaSeleccionada(cat);
-                        }}
                         tabIndex={0}
                         role="button"
                         title={cat}
@@ -110,7 +121,9 @@ const Cursos = () => {
                               : "var(--color-accent)",
                           }}
                         >
-                          {cursos.filter((c) => c.categoria === cat).length}{" "}
+                          {
+                            cursos.filter((c) => c.categoria === cat).length
+                          }{" "}
                           curso(s)
                         </div>
                       </li>
@@ -146,12 +159,13 @@ const Cursos = () => {
                     style={{
                       background: "var(--color-blanco)",
                       border: "1px solid var(--color-negro-desvanecido)",
-                      boxShadow: "0 10px 24px var(--color-negro-desvanecido)",
+                      boxShadow:
+                        "0 10px 24px var(--color-negro-desvanecido)",
                     }}
                   >
                     <div className="w-full h-40 overflow-hidden">
                       <img
-                        src={nofoto}
+                        src={curso.imagen ?? nofoto}
                         alt={curso.nombre}
                         className="w-full h-full object-cover"
                         loading="lazy"
@@ -208,20 +222,27 @@ const Cursos = () => {
                         </div>
                       )}
 
-                      <div className="mt-4">
+                      <div className="mt-4 flex flex-col gap-2">
                         <Link
                           to={`/cursos/${curso.id}`}
-                          className="px-3 py-2 rounded-xl text-sm font-medium transition-transform active:scale-95"
+                          className="px-3 py-2 rounded-xl text-sm font-medium transition-transform active:scale-95 text-center"
                           style={{
                             background: "var(--color-verde-intermedio)",
                             color: "var(--color-negro)",
                           }}
-                          onClick={() =>
-                            alert(`(Demo) Ver detalles de: ${curso.nombre}`)
-                          }
                         >
                           Ver detalles
                         </Link>
+                        <button
+                          onClick={() => agregarAlCarrito(curso)}
+                          className="px-3 py-2 rounded-xl text-sm font-medium transition-transform active:scale-95"
+                          style={{
+                            background: "var(--color-verde-claro)",
+                            color: "var(--color-negro)",
+                          }}
+                        >
+                          Agregar al carrito
+                        </button>
                       </div>
                     </div>
                   </article>

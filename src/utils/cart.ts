@@ -1,3 +1,4 @@
+// Tipo base de ítem en el carrito
 export type CartItem = {
   id: string;
   nombre: string;
@@ -7,50 +8,58 @@ export type CartItem = {
   cantidad: number;
 };
 
-const KEY = "carritocompras";
+// Clave única en localStorage
+const CART_KEY = "carrito_cursos";
 
+// --- Funciones utilitarias ---
+
+// Leer carrito desde localStorage (seguro)
 export function safeReadCart(): CartItem[] {
   try {
-    const raw = sessionStorage.getItem(KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
+    const data = localStorage.getItem(CART_KEY);
+    if (!data) return [];
+    const parsed = JSON.parse(data);
     if (!Array.isArray(parsed)) return [];
-    return parsed.map((it) => ({
-      id: String(it.id),
-      nombre: String(it.nombre ?? ""),
-      docente: it.docente ? String(it.docente) : undefined,
-      categoria: it.categoria ? String(it.categoria) : undefined,
-      imagen: it.imagen ? String(it.imagen) : undefined,
-      cantidad: Number(it.cantidad ?? 1),
-    }));
+    return parsed as CartItem[];
   } catch {
-    sessionStorage.removeItem(KEY);
     return [];
   }
 }
 
-function writeCart(items: CartItem[]) {
-  sessionStorage.setItem(KEY, JSON.stringify(items));
-  window.dispatchEvent(new CustomEvent("cartUpdated"));
+// Guardar carrito
+function saveCart(cart: CartItem[]) {
+  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  window.dispatchEvent(new Event("cartUpdated"));
 }
 
-export function addToCart(item: Omit<CartItem, "cantidad">, qty = 1) {
+// Agregar curso al carrito
+export function addToCart(item: CartItem) {
   const cart = safeReadCart();
-  const idx = cart.findIndex((i) => i.id === item.id);
-  if (idx >= 0) cart[idx].cantidad += qty;
-  else cart.push({ ...item, cantidad: qty });
-  writeCart(cart);
+  const existing = cart.find((c) => c.id === item.id);
+
+  if (existing) {
+    existing.cantidad += item.cantidad || 1;
+  } else {
+    cart.push({ ...item, cantidad: item.cantidad || 1 });
+  }
+
+  saveCart(cart);
 }
 
+// Eliminar curso del carrito
 export function removeFromCart(id: string) {
-  const cart = safeReadCart().filter((i) => i.id !== id);
-  writeCart(cart);
+  const cart = safeReadCart().filter((c) => c.id !== id);
+  saveCart(cart);
 }
 
+// Vaciar carrito
 export function clearCart() {
-  writeCart([]);
+  localStorage.removeItem(CART_KEY);
+  window.dispatchEvent(new Event("cartUpdated"));
 }
 
-export function cartCount(): number {
-  return safeReadCart().reduce((acc, it) => acc + (Number(it.cantidad) || 0), 0);
+// Obtener total de items (opcional)
+export function getCartCount(): number {
+  const cart = safeReadCart();
+  return cart.reduce((acc, c) => acc + (c.cantidad || 0), 0);
 }

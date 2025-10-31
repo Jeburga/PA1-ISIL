@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "./../assets/img/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { cartCount } from "../utils/cart";
+import {  getCartCount } from "../utils/cart";
 
 const navigation = [
   { name: "Inicio", url: "/" },
@@ -24,10 +24,10 @@ export default function MainHeader() {
   const location = useLocation();
   console.log(location.pathname);
 
-  const [count, setCount] = useState<number>(cartCount());
+  const [count, setCount] = useState<number>( getCartCount());
 
   useEffect(() => {
-    const onUpdate = () => setCount(cartCount());
+    const onUpdate = () => setCount( getCartCount());
     window.addEventListener("cartUpdated", onUpdate as EventListener);
     // también actualiza al cargar / cambiar de ruta
     onUpdate();

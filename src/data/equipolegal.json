@@ -1,44 +1,22 @@
 [
-  {
-    "id": "ab001",
-    "nombre": "Ana Valverde",
-    "especialidad": "Derecho Laboral",
-    "foto": "miembro1",
-    "tags": ["Despidos", "Beneficios", "Sunafil"]
-  },
-  {
-    "id": "ab002",
-    "nombre": "Carlos Ibáñez",
-    "especialidad": "Derecho Corporativo",
-    "foto": "miembro2",
-    "tags": ["Constitución", "M&A", "Contratos"]
-  },
-  {
-    "id": "ab003",
-    "nombre": "Mario Rojas",
-    "especialidad": "Protección al Consumidor",
-    "foto": "miembro3",
-    "tags": ["Indecopi", "Publicidad", "Reclamos"]
-  },
-  {
-    "id": "ab004",
-    "nombre": "José Mendoza",
-    "especialidad": "Derecho Civil",
-    "foto": "miembro4",
-    "tags": ["Cobro de deudas", "Responsabilidad civil"]
-  },
-  {
-    "id": "ab005",
-    "nombre": "Jason Fernández",
-    "especialidad": "Propiedad Intelectual",
-    "foto": "miembro5",
-    "tags": ["Marcas", "Patentes", "Derechos de autor"]
-  },
-  {
-    "id": "ab006",
-    "nombre": "Pedro Salas",
-    "especialidad": "Penal Económico",
-    "foto": "miembro6",
-    "tags": ["Compliance", "Delitos societarios"]
-  }
+  { "id": "ab001", "nombre": "Ana Valverde", "especialidad": "Derecho Laboral", "foto": "miembro1", "tags": ["Despidos", "Beneficios", "Sunafil"] },
+  { "id": "ab002", "nombre": "Carlos Ibáñez", "especialidad": "Derecho Corporativo", "foto": "miembro2", "tags": ["Constitución", "M&A", "Contratos"] },
+  { "id": "ab003", "nombre": "Mario Rojas", "especialidad": "Protección al Consumidor", "foto": "miembro3", "tags": ["Indecopi", "Publicidad", "Reclamos"] },
+  { "id": "ab004", "nombre": "José Mendoza", "especialidad": "Derecho Civil", "foto": "miembro4", "tags": ["Cobro de deudas", "Responsabilidad civil"] },
+  { "id": "ab005", "nombre": "Jason Fernández", "especialidad": "Propiedad Intelectual", "foto": "miembro5", "tags": ["Marcas", "Patentes", "Derechos de autor"] },
+  { "id": "ab006", "nombre": "Pedro Salas", "especialidad": "Penal Económico", "foto": "miembro6", "tags": ["Compliance", "Delitos societarios"] },
+  { "id": "ab007", "nombre": "Rosa León", "especialidad": "Derecho Ambiental", "foto": "miembro7", "tags": ["Sostenibilidad", "Regulación ambiental"] },
+  { "id": "ab008", "nombre": "Diego Quispe", "especialidad": "Derecho Tributario", "foto": "miembro8", "tags": ["SUNAT", "Fiscalización", "Impuestos"] },
+  { "id": "ab009", "nombre": "Lucía Campos", "especialidad": "Derecho Familiar", "foto": "miembro9", "tags": ["Divorcios", "Custodia", "Adopciones"] },
+  { "id": "ab010", "nombre": "Raúl Castillo", "especialidad": "Derecho Administrativo", "foto": "miembro10", "tags": ["Procedimientos", "Sanciones", "Registros públicos"] },
+  { "id": "ab011", "nombre": "Carmen Reyes", "especialidad": "Derecho Internacional", "foto": "miembro11", "tags": ["Tratados", "Arbitraje internacional"] },
+  { "id": "ab012", "nombre": "Oscar Cárdenas", "especialidad": "Derecho Marítimo", "foto": "miembro12", "tags": ["Transporte", "Puertos", "Comercio exterior"] },
+  { "id": "ab013", "nombre": "Patricia Gutiérrez", "especialidad": "Derecho Minero", "foto": "miembro13", "tags": ["Concesiones", "Exploración", "Regalías"] },
+  { "id": "ab014", "nombre": "Fernando Ruiz", "especialidad": "Derecho Bancario", "foto": "miembro14", "tags": ["Regulación", "Créditos", "Finanzas"] },
+  { "id": "ab015", "nombre": "Beatriz Torres", "especialidad": "Derecho Constitucional", "foto": "miembro15", "tags": ["Derechos Humanos", "Amparos"] },
+  { "id": "ab016", "nombre": "Gonzalo Paredes", "especialidad": "Derecho Notarial", "foto": "miembro16", "tags": ["Escrituras", "Certificaciones"] },
+  { "id": "ab017", "nombre": "Andrea Fuentes", "especialidad": "Derecho Educativo", "foto": "miembro17", "tags": ["Licenciamiento", "SUNEDU"] },
+  { "id": "ab018", "nombre": "Ricardo Peña", "especialidad": "Derecho Sanitario", "foto": "miembro18", "tags": ["Farmacéutico", "Hospitalario"] },
+  { "id": "ab019", "nombre": "Isabel Mora", "especialidad": "Derecho del Consumidor", "foto": "miembro19", "tags": ["Garantías", "Indecopi"] },
+  { "id": "ab020", "nombre": "Sergio Díaz", "especialidad": "Derecho Informático", "foto": "miembro20", "tags": ["Protección de datos", "Ciberseguridad"] }
 ]

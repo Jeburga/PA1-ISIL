@@ -8,6 +8,7 @@ import Equipo from './pages/Equipo'
 import Cursos  from './pages/Cursos'
 import CursoDetalles from './pages/CursoDetalles'
 import Carrito from './pages/Carrito'
+import EquipoLegal from './pages/EquipoLegal'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/cursos' element={<Cursos />} />
           <Route path="/cursos/:idcurso" element={<CursoDetalles />} />
           <Route path="/carrito" element={<Carrito />} />
+          <Route path="equipolegal" element={< EquipoLegal />} />
         </Routes>
         <Footer />
       </BrowserRouter>
