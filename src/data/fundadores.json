@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Roberto",
+    "apellido": "Hernández",
+    "especialidad": "Derecho Penal",
+    "foto": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
+  },
+  {
+    "id": 2,
+    "nombre": "Carmen",
+    "apellido": "Villalobos",
+    "especialidad": "Derecho Corporativo",
+    "foto": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
+  },
+  {
+    "id": 3,
+    "nombre": "Andrés",
+    "apellido": "Morales",
+    "especialidad": "Derecho Laboral",
+    "foto": "https://images.unsplash.com/photo-1623944889288-2131479d4455?w=400&h=400&fit=crop"
+  },
+  {
+    "id": 4,
+    "nombre": "Valentina",
+    "apellido": "Soto",
+    "especialidad": "Derecho de Familia",
+    "foto": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop"
+  },
+  {
+    "id": 5,
+    "nombre": "Fernando",
+    "apellido": "Cruz",
+    "especialidad": "Derecho Civil",
+    "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+  },
+  {
+    "id": 6,
+    "nombre": "Isabella",
+    "apellido": "Rojas",
+    "especialidad": "Propiedad Intelectual",
+    "foto": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop"
+  }
+]
