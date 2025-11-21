@@ -11,7 +11,7 @@ import {  getCartCount } from "../utils/cart";
 
 const navigation = [
   { name: "Inicio", url: "/" },
-  { name: "Te contactamos", url: "/contacto" },
+  { name: "Login", url: "/login" },
   { name: "Nuestros cursos", url: "/cursos" },
   { name: "Equipo", url: "/equipo" },
   { name: "Staff", url: "/equipolegal"}
